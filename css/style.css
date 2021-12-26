@@ -399,6 +399,10 @@ img {
   outline: 1px solid var(--accent-color);
 }
 
+.indent {
+  margin-bottom: 20px;
+}
+
 .textarea-hero:focus {
   border: 1px solid var(--accent-color);
   outline: 1px solid var(--accent-color);
@@ -410,7 +414,6 @@ img {
   width: 448px;
   height: 120px;
   padding: 12px 16px;
-  margin-bottom: 20px;
   cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -480,7 +483,6 @@ img {
   display: flex;
   padding: 10px 32px;
   margin: auto;
-  margin-bottom: 40px;
 
   font-family: var(--main-font);
   background: var(--accent-color);
@@ -797,13 +799,20 @@ img {
 }
 
 .footer-content {
+  width: 100%;
   display: flex;
   align-items: baseline;
 }
 
 .footer-address {
+  flex-wrap: nowrap;
   margin-left: 70px;
 }
+
+.footer-address-signup {
+  margin-left: 90px;
+}
+
 .footer-address:first-child {
   margin-left: 0;
 }
@@ -874,6 +883,7 @@ img {
   padding-left: 16px;
 
   background-color: #2f303a;
+  color: var(--background-color);
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -889,6 +899,7 @@ img {
   display: inline-block;
   width: 200px;
   height: 50px;
+  padding: 0;
   margin-left: 12px;
   font-family: var(--main-font);
   background: var(--accent-color);
