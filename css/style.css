@@ -20,6 +20,30 @@ body {
 
 /*--------------Navigation------------------*/
 
+.logo {
+  font-family: var(--logo-font);
+  width: 145px;
+  height: 31px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--title-text-color);
+  margin-right: 93px;
+}
+
+.logo-first {
+  font-family: var(--logo-font);
+  color: var(--accent-color);
+}
+
+.logo-second {
+  font-family: var(--logo-font);
+  color: var(--background-color);
+}
+
+/*----------------Utilites--------------*/
 ul {
   list-style-type: none;
   padding: 0;
@@ -52,33 +76,6 @@ img {
   padding-bottom: 94px;
 }
 
-.logo {
-  font-family: var(--logo-font);
-  width: 145px;
-  height: 31px;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--title-text-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-}
-
-.logo-first {
-  font-family: var(--logo-font);
-  color: var(--accent-color);
-}
-
-.logo-second {
-  font-family: var(--logo-font);
-  color: var(--background-color);
-}
-
-/*----------------Utilites--------------*/
-
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -88,22 +85,27 @@ img {
 
 /*--------------Header nav + contacts--------------*/
 
-.page-header {
+.pageheader {
   border-bottom: 1px solid #ececec;
 }
 
 .site-nav {
   display: flex;
-}
-
-.site-nav.link {
-  display: flex;
   position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
+  padding: 25px 0;
   font-family: inherit;
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  position: relative;
+  font-family: inherit;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .link {
@@ -125,8 +127,6 @@ img {
 .item {
   position: relative;
   display: flex;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .item:not(:first-child) {
@@ -153,15 +153,8 @@ img {
 }
 
 .contact-info {
-  margin-left: auto;
-}
-
-.contact-info.link {
   display: flex;
   align-items: center;
-}
-
-.contact-info.link .mail {
   margin-left: auto;
 }
 
